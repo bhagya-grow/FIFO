@@ -45,6 +45,24 @@ before generating the FIFO `full` and `empty` conditions.
 | `ASIZE` | Address width | 4 bits |
 | FIFO Depth | `2^ASIZE` | 16 |
 
-## Project Structure
+## 📁 Project Structure
 
 ```text
+async-fifo/
+│
+├── rtl/
+│   ├── fifo1.v
+│   ├── fifomem.v
+│   ├── sync_r2w.v
+│   ├── sync_w2r.v
+│   ├── rptr_empty.v
+│   └── wptr_full.v
+│
+├── tb/
+│   └── fifo_tb.v
+│
+├── simulation/
+│   └── waveform/
+│
+├── README.md
+└── LICENSE
